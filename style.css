@@ -1,0 +1,68 @@
+body, #slider, .wrap, .slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url('/img/sean-yalda-gX-noiX0t-4-unsplash.jpg');
+}
+
+
+.slide2 {
+    background-image: url('/img/tom-barrett-gahrG0vrcxg-unsplash.jpg');
+}
+
+
+.slide3 {
+    background-image: url('/img/will-truettner-bBF9V6qkjD4-unsplash.jpg');
+}
+
+.slide-content span {
+    font-size: 5rem;
+    color: #fff;
+    user-select: none;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    border-style: solid;
+}
+
+#arrowLeft {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrowRight {
+    border-width: 30px 0 30px 40px ;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
